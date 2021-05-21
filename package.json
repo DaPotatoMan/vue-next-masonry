@@ -1,5 +1,5 @@
 {
-   "name": "vitele",
+   "name": "vue-next-masonry",
    "version": "0.0.1",
    "author": {
       "name": "Fahadul Islam",
@@ -11,8 +11,7 @@
       "serve": "vite preview"
    },
    "dependencies": {
-      "vue": "^3.0.5",
-      "vue-next-masonry": "^1.0.1"
+      "vue": "^3.0.5"
    },
    "devDependencies": {
       "@vitejs/plugin-vue": "^1.2.2",
