@@ -1,6 +1,10 @@
 {
    "name": "vue-next-masonry",
    "version": "1.0.0",
+   "keywords": [
+      "vue",
+      "masonry"
+   ],
    "author": {
       "name": "Fahadul Islam",
       "email": "dev.iamfahad@gmail.com",
