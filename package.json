@@ -1,0 +1,34 @@
+{
+   "name": "vitele",
+   "version": "0.0.0",
+   "author": {
+      "name": "Fahadul Islam",
+      "email": "dev.iamfahad@gmail.com"
+   },
+   "scripts": {
+      "dev": "vite",
+      "build": "vite build && node build.ts",
+      "serve": "vite preview"
+   },
+   "dependencies": {
+      "vue": "^3.0.5"
+   },
+   "devDependencies": {
+      "@vitejs/plugin-vue": "^1.2.2",
+      "@vue/compiler-sfc": "^3.0.5",
+      "fs-extra": "^10.0.0",
+      "typescript": "^4.1.3",
+      "vite": "^2.3.3",
+      "vue-tsc": "^0.0.24"
+   },
+   "optionalDependencies": {
+      "@types/node": "^15.3.1",
+      "@typescript-eslint/eslint-plugin": "^4.24.0",
+      "@typescript-eslint/parser": "^4.24.0",
+      "eslint": "^7.26.0",
+      "eslint-config-airbnb-typescript": "^12.3.1",
+      "eslint-import-resolver-typescript": "^2.4.0",
+      "eslint-plugin-import": "^2.23.2",
+      "eslint-plugin-vue": "^7.9.0"
+   }
+}
