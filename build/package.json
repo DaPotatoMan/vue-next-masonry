@@ -5,6 +5,10 @@
       "vue",
       "masonry"
    ],
+   "repository": {
+      "type": "git",
+      "url": "https://github.com/DaPotatoMan/vue-next-masonry.git"
+   },
    "author": {
       "name": "Fahadul Islam",
       "email": "dev.iamfahad@gmail.com",
