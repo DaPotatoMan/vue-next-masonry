@@ -1,6 +1,6 @@
 {
    "name": "vitele",
-   "version": "0.0.0",
+   "version": "0.0.1",
    "author": {
       "name": "Fahadul Islam",
       "email": "dev.iamfahad@gmail.com"
@@ -11,7 +11,8 @@
       "serve": "vite preview"
    },
    "dependencies": {
-      "vue": "^3.0.5"
+      "vue": "^3.0.5",
+      "vue-next-masonry": "^1.0.1"
    },
    "devDependencies": {
       "@vitejs/plugin-vue": "^1.2.2",
