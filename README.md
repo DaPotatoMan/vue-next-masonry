@@ -2,8 +2,8 @@
 
 <a href="https://npmjs.org/package/vue-next-masonry">
 	<img src="https://img.shields.io/npm/v/vue-next-masonry.svg?style=for-the-badge"  alt="npm version">
-   
-<a href="https://npmjs.org/package/vue-next-masonry">
+    <img alt="npm bundle size" src="https://img.shields.io/bundlephobia/min/vue-next-masonry?style=for-the-badge">
+	<img src="https://img.shields.io/snyk/vulnerabilities/npm/vue-next-masonry?style=for-the-badge" alt="vulnerabilities">
 	<img src="https://img.shields.io/npm/dm/vue-next-masonry?style=for-the-badge" alt="npm downloads">
 </a>
 
