@@ -1,14 +1,18 @@
 {
    "name": "vue-next-masonry",
-   "version": "0.0.1",
+   "version": "1.0.3",
    "author": {
       "name": "Fahadul Islam",
-      "email": "dev.iamfahad@gmail.com"
+      "email": "dev.iamfahad@gmail.com",
+      "url": "https://github.com/DaPotatoMan"
+   },
+   "repository": {
+      "type": "git",
+      "url": "github:DaPotatoMan/vue-next-masonry.git"
    },
    "scripts": {
       "dev": "vite",
-      "build": "vite build && node build.ts",
-      "serve": "vite preview"
+      "build": "vite build && node build/build.ts"
    },
    "dependencies": {
       "vue": "^3.0.5"
