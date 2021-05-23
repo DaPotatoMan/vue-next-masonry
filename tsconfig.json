@@ -27,8 +27,7 @@
       "**.ts",
       "src/**/*.ts",
       "src/**/*.d.ts",
-      "src/**/*.vue",
-      "src/tests/*.vue"
+      "src/**/*.vue"
    ],
    "exclude": ["dist", "node_modules"]
 }

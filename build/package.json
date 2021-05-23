@@ -1,28 +1,17 @@
 {
-   "name": "vue-next-masonry",
-   "version": "1.0.2",
    "keywords": [
       "vue",
       "masonry"
    ],
-   "repository": {
-      "type": "git",
-      "url": "github:DaPotatoMan/vue-next-masonry.git"
-   },
-   "author": {
-      "name": "Fahadul Islam",
-      "email": "dev.iamfahad@gmail.com",
-      "url": "https://github.com/DaPotatoMan"
-   },
-   "files": [
-      "dist"
-   ],
-   "main": "./dist/lib.umd.js",
-   "module": "./dist/lib.es.js",
+   "main": "./lib.umd.js",
+   "module": "./lib.es.js",
    "exports": {
       ".": {
-         "import": "./dist/lib.es.js",
-         "require": "./dist/lib.umd.js"
+         "import": "./lib.es.js",
+         "require": "./lib.umd.js"
       }
+   },
+   "peerDependencies": {
+      "vue": "^3.0.5"
    }
 }
