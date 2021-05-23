@@ -13,7 +13,7 @@
 
 ```TS
 import { createApp } from 'vue';
-import masonry from '~/lib/main';
+import masonry from 'vue-next-masonry';
 
 createApp(...)
   .use(masonry)
