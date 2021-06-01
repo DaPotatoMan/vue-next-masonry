@@ -6,9 +6,14 @@
       "email": "dev.iamfahad@gmail.com",
       "url": "https://github.com/DaPotatoMan"
    },
+   "homepage": "https://github.com/DaPotatoMan/vue-next-masonry",
    "repository": {
       "type": "git",
-      "url": "github:DaPotatoMan/vue-next-masonry.git"
+      "url": "https://github.com/DaPotatoMan/vue-next-masonry.git"
+   },
+   "bugs": {
+      "email": "dev.iamfahad@gmail.com",
+      "url": "https://github.com/DaPotatoMan/vue-next-masonry/issues"
    },
    "scripts": {
       "dev": "vite",
