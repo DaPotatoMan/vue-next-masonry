@@ -56,7 +56,6 @@ module.exports = {
       'comma-dangle': 'off',
       'linebreak-style': 'off',
 
-      indent: ['error', 3],
       '@typescript-eslint/indent': ['error', 3],
       '@typescript-eslint/comma-dangle': 'off',
       '@typescript-eslint/no-empty-function': 'off',
