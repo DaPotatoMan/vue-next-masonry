@@ -1,6 +1,6 @@
 declare module '*.vue' {
-   import { ComponentOptions } from 'vue';
+   import type { DefineComponent } from 'vue';
 
-   const component: ComponentOptions;
+   const component: DefineComponent<Record<string, unknown>, Record<string, unknown>, unknown>;
    export default component;
 }
