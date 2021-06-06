@@ -130,6 +130,7 @@ export default defineComponent({
       });
 
       // Return wrapper with columns
+      // @ts-ignore
       return createElement(this.tag, this.css && containerConfig, columns);
    }
 });

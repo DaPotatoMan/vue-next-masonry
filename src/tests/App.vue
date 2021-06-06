@@ -5,7 +5,7 @@
          :gutter="{ default: '30px', 700: '20px' }"
       >
          <transition-group>
-            <div v-for="(item, index) in 20" :key="index" class="item">
+            <div v-for="(index) in 20" :key="index" class="item">
                {{ data[generateRandom()] }}
             </div>
          </transition-group>

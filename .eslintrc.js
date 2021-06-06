@@ -59,6 +59,7 @@ module.exports = {
       '@typescript-eslint/indent': ['error', 3],
       '@typescript-eslint/comma-dangle': 'off',
       '@typescript-eslint/no-empty-function': 'off',
+      '@typescript-eslint/ban-ts-comment': 'off',
 
       'vue/html-indent': ['error', 3],
       'vue/component-tags-order': 'off',
