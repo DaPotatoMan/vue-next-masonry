@@ -6,5 +6,4 @@ build/dist
 *.local
 
 # Log files
-*.lock
 *.log

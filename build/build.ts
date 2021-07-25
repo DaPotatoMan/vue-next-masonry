@@ -1,4 +1,4 @@
-const { copyFile, remove, writeFile } = require('fs-extra');
+const { copyFile, writeFile } = require('fs-extra');
 
 async function handlePackageJSON() {
    const keys = [

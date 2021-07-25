@@ -17,12 +17,13 @@
    },
    "scripts": {
       "dev": "vite",
-      "build": "vite build && node build/build.ts"
+      "build": "vue-tsc --noEmit && vite build && node build/build.ts"
    },
    "dependencies": {
       "vue": "^3.1.5"
    },
    "devDependencies": {
+      "@rollup/plugin-typescript": "^8.2.3",
       "@vitejs/plugin-vue": "^1.2.5",
       "@vue/compiler-sfc": "^3.1.5",
       "fs-extra": "^10.0.0",

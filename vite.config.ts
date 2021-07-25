@@ -1,6 +1,7 @@
 import { resolve } from 'path';
 import { defineConfig } from 'vite';
 import Vue from '@vitejs/plugin-vue';
+import typescript from '@rollup/plugin-typescript';
 
 export default defineConfig({
    resolve: {
@@ -11,11 +12,21 @@ export default defineConfig({
       }
    },
 
-   plugins: [Vue()],
+   plugins: [
+      Vue(),
+      typescript({
+         target: 'es2020',
+         declaration: true,
+         rootDir: 'src',
+         declarationDir: 'dist',
+         include: ['src/index.ts', 'src/lib/**'],
+         allowSyntheticDefaultImports: true
+      })
+   ],
 
    build: {
       lib: {
-         name: 'VueNextMasonry',
+         name: 'index',
          fileName: 'lib',
          entry: resolve(__dirname, 'src/lib/main.ts')
       },

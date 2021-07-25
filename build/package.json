@@ -5,6 +5,7 @@
    ],
    "main": "./lib.umd.js",
    "module": "./lib.es.js",
+   "typings": "./index",
    "exports": {
       ".": {
          "import": "./lib.es.js",
