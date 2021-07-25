@@ -1,23 +1,34 @@
 <template>
    <main class="view-main">
+      <h1>Normal</h1>
       <masonry
          :cols="{ default: 4, '1000.5': 3, 700: 2, 400: 1 }"
          :gutter="{ default: '30px', 700: '20px' }"
       >
          <transition-group>
-            <div v-for="(index) in 20" :key="index" class="item">
+            <div v-for="index in 10" :key="index" class="item">
                {{ data[generateRandom()] }}
             </div>
          </transition-group>
       </masonry>
+
+      <br>
+      <h1>Using Slots</h1>
+      <MasonrySlot :resolve-slot="true">
+         <div v-for="index in 10" :key="index" class="item">
+            {{ data[generateRandom()] }}
+         </div>
+      </MasonrySlot>
    </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import MasonrySlot from './MasonrySlot.vue';
 
 export default defineComponent({
    name: 'App',
+   components: { MasonrySlot },
    data() {
       return {
          data: []
@@ -42,6 +53,7 @@ export default defineComponent({
 
 <style>
 body {
+   padding: 10px 2vw;
    margin: 20px;
    font-weight: 400;
    font-family: Inter, 'Google Sans', -apple-system, BlinkMacSystemFont,

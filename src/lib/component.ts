@@ -60,7 +60,7 @@ export default defineComponent({
 
       getColumnsWithChildItems(): [] {
          const columns = [] as any;
-         const wrapper = this.$slots.default?.()[0] as any;
+         const [wrapper] = this.$slots.default?.() as any;
          let children = wrapper?.children || [];
 
          if (wrapper && wrapper.type.name === 'TransitionGroup') {
@@ -69,6 +69,10 @@ export default defineComponent({
             );
 
             children = wrapper.children?.default()[0].children || [];
+         }
+
+         if (this.resolveSlot && wrapper?.type?.description === 'Fragment') {
+            children = wrapper.children[0].children || [];
          }
 
          if (children.length === 0) return [];

@@ -26,5 +26,10 @@ export default {
    columnAttr: {
       type: [Object],
       default: () => {}
+   },
+
+   resolveSlot: {
+      type: Boolean,
+      default: false
    }
 };
