@@ -1,4 +1,5 @@
 import { defineComponent, h as createElement } from 'vue';
+import type { SlotWrapper } from './types';
 import { breakpointValue } from './helpers';
 import props from './props';
 
@@ -59,20 +60,19 @@ export default defineComponent({
       },
 
       getColumnsWithChildItems(): [] {
-         const columns = [] as any;
-         const [wrapper] = this.$slots.default?.() as any;
-         let children = wrapper?.children || [];
+         const columns: any = [];
 
-         if (wrapper && wrapper.type.name === 'TransitionGroup') {
-            console.warn(
-               'This component does not support <transition-group />. Using child elements.'
-            );
+         const slot = this.$slots.default?.() as SlotWrapper;
+         let children = [];
 
-            children = wrapper.children?.default()[0].children || [];
-         }
+         if (slot.length > 1) {
+            children = slot;
+         } else {
+            children = slot[0].children as any[];
 
-         if (this.resolveSlot && wrapper?.type?.description === 'Fragment') {
-            children = wrapper.children[0].children || [];
+            if (children.length === 1 && this.resolveSlot) {
+               children = children[0]?.children || [];
+            }
          }
 
          if (children.length === 0) return [];

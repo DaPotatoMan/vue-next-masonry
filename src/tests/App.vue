@@ -1,34 +1,43 @@
 <template>
    <main class="view-main">
       <h1>Normal</h1>
+
+      <h3>Without v-for</h3>
+      <masonry :cols="3" :gutter="{ default: '30px', 700: '20px' }">
+         <div class="item">1</div>
+         <div class="item">2</div>
+         <div class="item">3</div>
+         <div class="item">4</div>
+         <div class="item">5</div>
+      </masonry>
+
+      <h3>With v-for</h3>
       <masonry
          :cols="{ default: 4, '1000.5': 3, 700: 2, 400: 1 }"
          :gutter="{ default: '30px', 700: '20px' }"
       >
-         <transition-group>
-            <div v-for="index in 10" :key="index" class="item">
-               {{ data[generateRandom()] }}
-            </div>
-         </transition-group>
-      </masonry>
-
-      <br>
-      <h1>Using Slots</h1>
-      <MasonrySlot :resolve-slot="true">
-         <div v-for="index in 10" :key="index" class="item">
+         <div v-for="index in 5" :key="index" class="item">
             {{ data[generateRandom()] }}
          </div>
+      </masonry>
+
+      <h1>Using Slot</h1>
+      <MasonrySlot :resolve-slot="true">
+         <ChildSlot v-for="index in 10" :key="index" class="item">
+            {{ data[generateRandom()] }}
+         </ChildSlot>
       </MasonrySlot>
    </main>
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue';
+import ChildSlot from './ChildSlot.vue';
 import MasonrySlot from './MasonrySlot.vue';
 
 export default defineComponent({
    name: 'App',
-   components: { MasonrySlot },
+   components: { MasonrySlot, ChildSlot },
    data() {
       return {
          data: []

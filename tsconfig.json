@@ -15,7 +15,7 @@
       "importHelpers": true,
       "forceConsistentCasingInFileNames": true,
 
-      "lib": ["ESNext", "DOM"],
+      "lib": ["ESNext", "DOM", "DOM.Iterable"],
       "types": ["vite/client", "@types/node"],
 
       "paths": {
