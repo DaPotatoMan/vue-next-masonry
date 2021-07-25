@@ -10,7 +10,6 @@
 </center>
 
 ### Usage
-
 ```TS
 import { createApp } from 'vue';
 import masonry from 'vue-next-masonry';
@@ -30,6 +29,8 @@ In your Vue template...
   </div>
 </masonry>
 ```
+
+Here's a codesandbox [example](https://codesandbox.io/s/vue-next-masonry-0kwxd)
 
 ### Config
 
